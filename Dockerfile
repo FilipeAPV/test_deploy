@@ -6,7 +6,6 @@ RUN ls -la
 #COPY mvnw pom.xml ./
 COPY . .
 RUN ls -la
-RUN DOCKER_BUILDKIT=1
 RUN ./mvnw dependency:go-offline
 
 COPY src ./src
