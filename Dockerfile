@@ -6,7 +6,6 @@ RUN ls -la
 #COPY mvnw pom.xml ./
 COPY . .
 RUN ls -la
-RUN update-index --chmod=+x mvnw
 RUN ./mvnw dependency:go-offline
 
 COPY src ./src
