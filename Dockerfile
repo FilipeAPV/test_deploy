@@ -9,7 +9,7 @@ RUN ls -la
 RUN ./mvnw dependency:go-offline
 
 COPY src ./src
-
+#
 CMD ["./mvnw", "spring-boot:run"]
 #FROM eclipse-temurin:17-jdk-focal
 #FROM maven:3.8.3-openjdk-17
