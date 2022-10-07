@@ -7,7 +7,7 @@ RUN ls -la
 COPY . .
 RUN ls -la
 
-RUN ./mvnw dependency:go-offline
+RUN chmod +x mvnw dependency:go-offline
 
 COPY src ./src
 
