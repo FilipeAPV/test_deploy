@@ -9,6 +9,7 @@ class DeploymentTestApplicationTests {
 
     @Test
     void contextLoads() {
+        assertTrue("5 is greater then 4", 5 > 9);
     }
 
 }
