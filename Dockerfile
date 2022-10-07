@@ -1,10 +1,11 @@
 FROM eclipse-temurin:17-jdk-focal
 #RUN ls -la 
 WORKDIR /app
-#RUN ls -la 
-COPY .mvn/ .mvn
-COPY mvnw pom.xml ./
-#RUN ls -la
+RUN ls -la 
+#COPY .mvn/ .mvn
+#COPY mvnw pom.xml ./
+COPY . .
+RUN ls -la
 
 RUN ./mvnw dependency:go-offline
 
