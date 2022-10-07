@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk-focal
-FROM maven:3.8.3-openjdk-17
+#FROM maven:3.8.3-openjdk-17
 #RUN ls -la 
 WORKDIR /app
 RUN ls -la 
@@ -7,7 +7,8 @@ RUN ls -la
 #COPY mvnw pom.xml ./
 COPY . .
 RUN ls -la
-RUN chmod +x  ./mvnw dependency:go-offline
+RUN chmod +x mvnw
+RUN ./mvnw dependency:go-offline
 
 COPY src ./src
 #
