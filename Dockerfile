@@ -6,6 +6,7 @@ RUN ls -la
 #COPY mvnw pom.xml ./
 COPY . .
 RUN ls -la
+RUN sudo chmod 777
 RUN ./mvnw dependency:go-offline
 
 COPY src ./src
