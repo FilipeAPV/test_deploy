@@ -1,6 +1,5 @@
 FROM eclipse-temurin:17-jdk-focal
-#FROM maven:3.8.3-openjdk-17
-#RUN ls -la 
+
 WORKDIR /app
 RUN ls -la 
 #COPY .mvn/ .mvn
